@@ -1,14 +1,14 @@
-variable = "ami_id"{
+variable = "ami_id" {
     type = string
     default = "ami-0f3c7d07486cad139"
 }
 
-variable = "instance_type"{
+variable = "instance_type" {
     type = string
     default = "t2.micro"
 }
 
-variable = "tags"{
+variable = "tags" {
     type = map
     default = {
         name = "Hello terraform"
@@ -19,22 +19,22 @@ variable = "tags"{
     }
 }
 
-variable = "sg-name"{
+variable = "sg-name" {
     type = string
     default = "roboshop all"
 }
 
-variable = "sg-description"{
+variable = "sg-description" {
     type = string
     default = "allowing all ports"
 }
 
-variable = "inbound-from-port"{
+variable = "inbound-from-port" {
     type = string
     default = 0
 }
 
-variable = "cidr-blocks"{
+variable = "cidr-blocks" {
     type = list
     default = ["0.0.0.0/0"]
 }
