@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
   }
 }
 
-resource "aws_security_group" "roboshop-all-new" { #this is for terraform name
+resource "aws_security_group" "roboshop-all" { #this is for terraform name
     name        = "var.sg-name" #this is aws name
     description = "var.sg-description"
     #vpc_id      = aws_vpc.main.id
